@@ -4,7 +4,7 @@ This is a development test project for Alpha Efficiency.
 
 ## Project Description
 
-The test involves creating a fully functional website based on a Figma project. The website includes the implementation of a responsive design, which includes a burger menu for mobile and tablet versions, as well as a dropdown feature for the FAQ section.
+The test involves creating a fully functional website based on a Figma project. The website includes the implementation of a responsive design, which includes a burger menu for mobile and tablet versions, a dropdown feature for the FAQ section as well as a countdown feature to ensure users are aware of a limited-time special offer.
 
 ## UX/UI Improvements
 
