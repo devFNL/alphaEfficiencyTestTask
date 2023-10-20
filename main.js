@@ -15,8 +15,16 @@ function updateCountdown() {
   const timeDifference = endDate - currentDate;
 
   if (timeDifference <= 0) {
-    // cambiar numeros a rojos
-    $timer.innerHTML = "Offer just expired!";
+    $days.style.color =
+      $hours.style.color =
+      $minutes.style.color =
+      $seconds.style.color =
+        "red";
+    $days.textContent =
+      $hours.textContent =
+      $minutes.textContent =
+      $seconds.textContent =
+        "0";
   } else {
     const days = Math.floor(
       timeDifference / (MILLISECONDS * TIME_UNIT * TIME_UNIT * DAY_UNIT)
@@ -64,9 +72,15 @@ const endDate = new Date();
 const TIME_UNIT = 60;
 const DAY_UNIT = 24;
 const MILLISECONDS = 1000;
-const OFFER_DAYS = 1;
-endDate.setDate(endDate.getDate() + OFFER_DAYS);
-addEventListener(
-  "DOMContentLoaded",
-  setInterval(updateCountdown, MILLISECONDS)
-);
+const OFFER_DAYS = 3;
+// endDate.setDate(endDate.getDate() + OFFER_DAYS);
+// addEventListener(
+//   "DOMContentLoaded",
+//   setInterval(updateCountdown, MILLISECONDS)
+// );
+
+// 2 min demo version for test task
+endDate.setTime(endDate.getTime() + 2 * 60 * 1000);
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
