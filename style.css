@@ -1,0 +1,1160 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+:root {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  display: block;
+  padding: 20px 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#desktop-menu {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-navbar {
+  display: none;
+}
+
+#burger-menu {
+  background-color: white;
+  position: absolute;
+  top: -100vh;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: top 0.2s;
+}
+
+.burger-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 20px;
+  margin-top: 15px;
+}
+
+.vertical-menu {
+  flex-grow: 1;
+}
+
+.burger-hr {
+  margin: auto;
+  width: 90%;
+}
+
+.vertical-menu li {
+  padding-left: 20px;
+  margin: 20px auto;
+}
+
+.vertical-menu a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-burger {
+  margin: 15px auto;
+}
+
+.contact-burger {
+  text-align: center;
+}
+
+.contact-burger img {
+  margin: 20px 15px;
+}
+
+.contact-burger p {
+  padding-left: 20px;
+  text-align: left;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+.yellow-card {
+  background: linear-gradient(to right, white 50%, #ffd900 50%);
+}
+
+.hero-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 15px auto;
+  padding-top: 30px;
+  font-size: 32px;
+}
+
+.spots-available {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.small-text {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.hero p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.hero #free {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.hero button {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.color-span {
+  color: #dd71c6;
+}
+
+.main-button {
+  background-color: #dd71c6;
+  color: white;
+  margin: auto;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main-button {
+  background-color: #73c3f4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.main-button:hover {
+  transform: scale(0.95);
+}
+
+#yellow-button {
+  background-color: #ffd900;
+}
+
+.countdown {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-item {
+  text-align: center;
+  margin: auto;
+  color: #0083d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-item p {
+  margin: 20px auto;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+#timer {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#timer span {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.hero-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.desktop-info {
+  display: none;
+}
+
+.mobile-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-info {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-info p {
+  word-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.second-container {
+  background-color: #dd71c6;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.second button {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.badges {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.badge {
+  width: 135px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 5px;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.badge:hover {
+  transform: scale(1.02);
+}
+
+.badge span {
+  color: rgb(148, 148, 148);
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.badge h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.badge p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.how-it-works {
+  background-color: #73c3f4;
+  color: white;
+  margin: auto;
+}
+
+.how-it-works-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.how-it-works h2 {
+  margin: 20px 40px;
+  width: 60%;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.how-it-works button {
+  margin: 30px auto;
+}
+
+.how-it-works p {
+  margin: 20px 40px;
+  width: 80%;
+  font-weight: 14px;
+}
+
+.how-it-works img {
+  margin: 60px auto;
+  width: 85%;
+}
+
+.how-it-works-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.we-can-help-container {
+  background-color: white;
+  color: black;
+  margin: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.we-can-help h2 {
+  margin: 20px 40px;
+  width: 60%;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.we-can-help p {
+  font-weight: bold;
+  margin: 20px 40px;
+  width: 80%;
+}
+
+.we-can-help img {
+  width: 100vw;
+  margin: 30px auto;
+}
+
+.we-can-help button {
+  margin: 20px auto;
+}
+
+#desktop-help-img {
+  display: none;
+}
+
+#desktop-help-data {
+  display: none;
+}
+
+.what-you-get {
+  background-color: rgb(247, 247, 247);
+  color: black;
+}
+
+.what-you-get-container {
+  margin: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.what-you-get h2 {
+  margin: 20px 40px;
+  width: 60%;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.what-you-get span {
+  color: #dd71c6;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.what-you-get button {
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+
+.cards {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.card h3 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 100;
+  font-size: 18px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.card ul {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.card li {
+  margin: 15px auto;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sea {
+  color: #0083d3;
+}
+
+.pink {
+  color: #dd71c6;
+}
+
+.sea-hr {
+  border: none;
+  border-top: 1px solid #73c3f4;
+  margin: auto;
+  width: 80%;
+}
+
+.pink-hr {
+  border: none;
+  border-top: 1px solid #dd71c6;
+  margin: auto;
+  width: 80%;
+}
+
+.faq-container {
+  background-color: white;
+  color: black;
+  margin: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#faq h2 {
+  margin: 20px 40px;
+  width: 60%;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+#faq li {
+  font-weight: bold;
+  background-color: rgb(247, 247, 247);
+  margin: 10px auto;
+  padding-left: 30px;
+  width: 80%;
+  padding: 20px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  transition: box-shadow 250ms ease-in-out;
+}
+
+#faq li:hover {
+  box-shadow: 5px 6px 10px -5px rgba(184, 184, 184, 0.59);
+}
+
+.faq-down-arrow {
+  margin: 0px 5px;
+}
+
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes expandAnswer {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 1000px;
+    opacity: 1;
+  }
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  animation: expandAnswer 0.4s forwards;
+}
+
+.answer.show-answer {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.faq-down-arrow {
+  transition: transform 0.3s;
+}
+
+.faq-down-arrow.rotated {
+  animation: rotateRight 0.3s;
+  transform: rotate(90deg);
+}
+
+.faq-option-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer {
+  display: none;
+}
+
+.answer.show-answer {
+  display: flex;
+  font-size: 14px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: rgb(247, 247, 247);
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+footer img {
+  margin: 20px 0px;
+}
+
+footer p {
+  width: 80%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.contact-element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.contactText {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contactText h3 {
+  font-weight: 900;
+}
+
+.contactText p {
+  margin: 0;
+  width: 100%;
+}
+
+.about-us li,
+.more-links li {
+  font-weight: bold;
+  margin: 30px auto;
+}
+
+.about-us h2,
+.more-links h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.social img {
+  margin-top: 20px;
+  width: 30px;
+  margin-left: 0px;
+}
+
+#copy-right {
+  margin-bottom: 40px;
+}
+
+/* TABLET VERSION MEDIA QUERY ------------------------------------- */
+@media screen and (min-width: 820px) {
+  #desktop-menu {
+    margin: 0px 50px;
+  }
+
+  .burger-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin: 20px 50px;
+    padding: 0 20px;
+  }
+
+  .vertical-menu li {
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  .contact-burger p {
+    padding-left: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto;
+  }
+
+  .hero h1 {
+    margin-left: 0px;
+    width: 60%;
+    text-align: left;
+  }
+
+  .hero-info {
+    width: 60%;
+    margin-left: 0px;
+  }
+
+  .countdown {
+    margin: 25px auto;
+    max-width: 50%;
+  }
+
+  .countdown-item p {
+    font-size: 12px;
+  }
+
+  .small-text {
+    margin: 10px auto;
+  }
+
+  #timer span {
+    font-size: 30px;
+  }
+
+  .badge {
+    height: 200px;
+  }
+
+  .how-it-works h2 {
+    font-size: 36px;
+    width: 50%;
+    padding-top: 50px;
+    margin: 20px 150px;
+  }
+
+  .how-it-works p {
+    width: 70%;
+    font-size: 22px;
+    margin: 20px 150px;
+  }
+
+  .how-it-works img {
+    width: 70%;
+  }
+
+  .we-can-help h2 {
+    font-size: 36px;
+    width: 50%;
+    padding-top: 50px;
+    margin: 20px 150px;
+  }
+
+  .we-can-help p {
+    width: 60%;
+    font-size: 19px;
+    margin: 20px 150px;
+  }
+
+  .what-you-get h2 {
+    font-size: 34px;
+    width: 50%;
+    padding-top: 50px;
+    margin: 20px 150px;
+  }
+
+  .what-you-get span {
+    color: #dd71c6;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 100;
+    font-size: 34px;
+  }
+
+  .cards {
+    width: 450px;
+  }
+
+  .card {
+    padding: 50px;
+  }
+
+  #faq h2 {
+    font-size: 36px;
+    width: 50%;
+    padding-top: 50px;
+    margin: 20px 150px;
+  }
+
+  #faq ul {
+    width: 80%;
+    margin: auto;
+  }
+
+  .footer-container {
+    padding: 0px 50px;
+  }
+
+  footer p {
+    font-size: 16px;
+    width: 45%;
+  }
+
+  .contact-element img {
+    width: 20px;
+  }
+
+  .contactText p {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .about-and-more {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+    margin: 20px auto;
+  }
+
+  .social {
+    width: 85%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  #copy-right {
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 25px;
+    padding-bottom: 50px;
+  }
+}
+
+/* DESKTOP VERSION MEDIA QUERY ------------------------------------- */
+
+@media screen and (min-width: 1280px) {
+  #burger-menu,
+  .burger {
+    display: none;
+  }
+
+  .yellow-card {
+    background: linear-gradient(to right, white 71%, #ffd900 29%);
+  }
+
+  .mobile-info {
+    display: none;
+  }
+
+  .desktop-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .desktop-info p {
+    width: 65%;
+    font-size: 16px;
+  }
+  .desktop-info button {
+    margin: 50px 0px;
+  }
+
+  .spots-available {
+    display: none;
+  }
+
+  #desktop-menu {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .desktop-navbar {
+    display: block;
+    margin-left: 30px;
+  }
+
+  .desktop-navbar ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .desktop-navbar li {
+    margin: 0px 3px;
+    position: relative;
+  }
+
+  .desktop-navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .desktop-navbar li::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #73c3f4;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+  }
+
+  .desktop-navbar li:hover::before {
+    width: 100%;
+  }
+
+  .hero-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0px 100px;
+  }
+
+  .hero h1 {
+    width: 80%;
+    text-align: left;
+  }
+
+  .countdown {
+    max-width: 45%;
+    max-height: 30vh;
+    height: 100%;
+  }
+
+  .badge {
+    width: 200px;
+  }
+
+  .badge h2 {
+    font-size: 38px;
+  }
+
+  .badge p {
+    font-size: 16px;
+  }
+
+  .badge span {
+    font-size: 30px;
+  }
+
+  .how-it-works-container {
+    width: 90%;
+    padding: 0px 60px;
+  }
+
+  .how-it-works p {
+    font-size: 16px;
+    width: 50%;
+  }
+
+  .how-it-works h2 {
+    font-size: 32px;
+  }
+
+  .how-it-works button {
+    align-self: flex-start;
+  }
+
+  .how-it-works img {
+    width: 100%;
+    margin-right: 40px;
+    padding-top: 150px;
+  }
+
+  .how-it-works-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 50px;
+  }
+
+  .how-it-works-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .we-can-help-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .we-can-help p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  #media-help-img {
+    display: none;
+  }
+
+  #media-help-text {
+    display: none;
+  }
+
+  #desktop-help-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #desktop-help-img {
+    width: 80%;
+    display: block;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .what-you-get-container {
+    width: 80%;
+  }
+
+  .what-you-get h2 {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+  }
+
+  .card {
+    padding: 15px 5px;
+    margin: 50px 10px;
+    height: 320px;
+  }
+
+  .card h3 {
+    font-size: 24px;
+  }
+
+  .card ul {
+    padding: 0px 50px;
+  }
+
+  .card li {
+    margin: 25px auto;
+    font-size: 16px;
+    width: 300px;
+    text-align: left;
+  }
+
+  #blue-card {
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  #blue-card:hover {
+    background-color: #73c3f4;
+    color: white;
+  }
+
+  #blue-card:hover h3 {
+    color: white;
+  }
+
+  #pink-card {
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  #pink-card:hover {
+    background-color: #dd71c6;
+    color: white;
+  }
+
+  #pink-card:hover h3 {
+    color: white;
+  }
+
+  #faq h2 {
+    margin: 50px 100px;
+    padding: 0px 50px;
+  }
+
+  #faq li {
+    width: 100%;
+  }
+
+  .answer.show-answer {
+    font-size: 16px;
+  }
+
+  .footer-container {
+    padding: 20px 150px;
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .contactText p {
+    width: 100%;
+  }
+
+  .about-and-more {
+    gap: 110px;
+  }
+
+  .about-and-more h2 {
+    padding-top: 40px;
+    margin-bottom: 40px;
+    width: 200px;
+  }
+
+  .about-us li,
+  .more-links li {
+    margin: 40px auto;
+  }
+
+  .social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  #copy-right {
+    margin-bottom: 0px;
+  }
+}
